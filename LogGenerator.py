@@ -12,7 +12,7 @@ def GetLineCount():
     return i
 
 def MakeLog(startLine, numLines):
-    destData = time.strftime("/var/log/cadabra/%Y%m%d-%H%M%S.log")
+    destData = time.strftime("/var/log/diolive/%Y%m%d-%H%M%S.log")
     with open(sourceData, 'r') as csvfile:
         with open(destData, 'w') as dstfile:
             reader = csv.reader(csvfile)

@@ -1,0 +1,22 @@
+{
+"cloudwatch.emitMetrics": true,
+"kinesis.endpoint": "kinesis.<region>.amazonaws.com",
+"firehose.endpoint": "firehose.<region>.amazon.com",
+  "flows" : [
+    {
+      "filePattern": "/var/log/diolive/*.log",
+      "kinesisStream": "VaccinesStream",
+      "partitionKeyOption": "RANDOM",
+      "dataProcessingOptions": [
+        {
+          "optionName": "CSVTOJSON",
+          "customFieldNames": ["country", "iso_code", "total_vaccinations", "people_fully_vaccinated", "total_vaccinations_per_hundred", "vaccines", "source_name", "source_website"]
+        }
+       ]
+    },
+    {
+      "filePattern": "/var/log/diolive/*.log",
+      "deliveryStream": "CovidVaccinesLogs"
+    }
+  ]
+}

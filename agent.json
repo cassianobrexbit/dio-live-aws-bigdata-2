@@ -1,7 +1,7 @@
 {
 "cloudwatch.emitMetrics": true,
 "kinesis.endpoint": "kinesis.<region>.amazonaws.com",
-"firehose.endpoint": "firehose.<region>.amazon.com",
+"firehose.endpoint": "firehose.<region>.amazonaws.com",
   "flows" : [
     {
       "filePattern": "/var/log/diolive/*.log",

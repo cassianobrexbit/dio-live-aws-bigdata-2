@@ -1,8 +1,12 @@
+#!/usr/bin/python3
+
+# -*- coding: utf-8 -*-
+
 import csv
 import time
 import sys
 
-sourceData = "country_vaccinations.csv"
+sourceData = "country_vacctinations.csv"
 placeholder = "LastLine.txt"
 
 def GetLineCount():

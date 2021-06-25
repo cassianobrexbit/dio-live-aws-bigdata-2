@@ -37,3 +37,7 @@ Repositório para a Live de 24/06/2021
   - _sudo ./LogGenerator.py_
   - _tail -f /var/log/aws-kinesis-agent/aws-kinesis-agent.log_
   - AWS Console -> Kinesis Streams -> select stream -> monitoring
+  
+### AWS Glue
+- AWS Console -> glue databrew -> create new project -> create new role -> create project
+- Create dataset -> S3 -> formato CSV

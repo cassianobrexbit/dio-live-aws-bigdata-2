@@ -6,7 +6,7 @@ import csv
 import time
 import sys
 
-sourceData = "country_vacctinations.csv"
+sourceData = "country_vaccinations.csv"
 placeholder = "LastLine.txt"
 
 def GetLineCount():
